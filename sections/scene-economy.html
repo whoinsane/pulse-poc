@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scene Economy & Structural Cohesion - Monster D Script Analysis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/shared.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <div class="header">
+                <h1 class="project-title">Monster D</h1>
+                <p class="project-subtitle">Comprehensive Script Analysis Report</p>
+                
+                <div class="project-card">
+                    <div class="card-row">
+                        <span class="card-label">Overall Score</span>
+                        <span class="card-value">5.9/10</span>
+                    </div>
+                    <div class="card-row">
+                        <span class="card-label">Verdict</span>
+                        <span class="card-value">Consider with Rewrite</span>
+                    </div>
+                    <div class="card-row">
+                        <span class="card-label">Stage</span>
+                        <span class="card-value">Development</span>
+                    </div>
+                </div>
+            </div>
+                                                <div class="nav">
+                <!-- Overview Section -->
+                <div class="nav-section">
+                    <div class="nav-section-title">Overview</div>
+                    <a href="../index.html" class="nav-pill">
+                        <span class="nav-icon">🎬</span>
+                        <span>Monster D - Project Snapshot</span>
+                    </a>
+                </div>
+
+                <!-- Story Analysis Section -->
+                <div class="nav-section">
+                    <div class="nav-section-title">Story Analysis</div>
+                    <a href="concept-hook.html" class="nav-pill">
+                        <span class="nav-icon">💡</span>
+                        <span>Concept & Hook</span>
+                    </a>
+                    <a href="plot-analysis.html" class="nav-pill">
+                        <span class="nav-icon">📖</span>
+                        <span>Plot Analysis</span>
+                    </a>
+                    <a href="structural-engineering.html" class="nav-pill">
+                        <span class="nav-icon">🏗️</span>
+                        <span>Structural Engineering</span>
+                    </a>
+                </div>
+
+                <!-- Characters Section -->
+                <div class="nav-section">
+                    <div class="nav-section-title">Characters</div>
+                    <a href="protagonist.html" class="nav-pill">
+                        <span class="nav-icon">👤</span>
+                        <span>Protagonist (Vikram)</span>
+                    </a>
+                    <a href="antagonist.html" class="nav-pill">
+                        <span class="nav-icon">😈</span>
+                        <span>Antagonist (Ranjit)</span>
+                    </a>
+                    <a href="supporting-cast.html" class="nav-pill">
+                        <span class="nav-icon">👥</span>
+                        <span>Supporting Cast</span>
+                    </a>
+                    <a href="character-psychology.html" class="nav-pill">
+                        <span class="nav-icon">🧠</span>
+                        <span>Character Psychology</span>
+                    </a>
+                </div>
+
+                <!-- Craft Elements Section -->
+                <div class="nav-section">
+                    <div class="nav-section-title">Craft Elements</div>
+                    <a href="dialogue-subtext.html" class="nav-pill">
+                        <span class="nav-icon">💬</span>
+                        <span>Dialogue & Subtext</span>
+                    </a>
+                    <a href="theme-moral.html" class="nav-pill">
+                        <span class="nav-icon">🎭</span>
+                        <span>Theme & Moral Core</span>
+                    </a>
+                    <a href="visual-storytelling.html" class="nav-pill">
+                        <span class="nav-icon">🎬</span>
+                        <span>Visual Storytelling</span>
+                    </a>
+                    <a href="emotional-resonance.html" class="nav-pill">
+                        <span class="nav-icon">❤️</span>
+                        <span>Emotional Resonance</span>
+                    </a>
+                </div>
+
+                <!-- Production & Market Section -->
+                <div class="nav-section">
+                    <div class="nav-section-title">Production & Market</div>
+                    <a href="marketability.html" class="nav-pill">
+                        <span class="nav-icon">📈</span>
+                        <span>Marketability & Packaging</span>
+                    </a>
+                    <a href="production.html" class="nav-pill">
+                        <span class="nav-icon">🎥</span>
+                        <span>Production Feasibility</span>
+                    </a>
+                    <a href="audience-strategy.html" class="nav-pill">
+                        <span class="nav-icon">🎯</span>
+                        <span>Audience & Marketing</span>
+                    </a>
+                </div>
+
+                <!-- Recommendations Section -->
+                <div class="nav-section">
+                    <div class="nav-section-title">Recommendations</div>
+                    <a href="rewrite-priorities.html" class="nav-pill">
+                        <span class="nav-icon">✏️</span>
+                        <span>Rewrite Priority Matrix</span>
+                    </a>
+                    <a href="scene-economy.html" class="nav-pill active">
+                        <span class="nav-icon">⚙️</span>
+                        <span>Scene Economy Analysis</span>
+                    </a>
+                    <a href="scorecard.html" class="nav-pill">
+                        <span class="nav-icon">📋</span>
+                        <span>Complete Scorecard</span>
+                    </a>
+                </div>
+
+                <!-- Script Section -->
+                <div class="nav-section">
+                    <div class="nav-section-title">Script</div>
+                    <a href="script.html" class="nav-pill">
+                        <span class="nav-icon">📄</span>
+                        <span>Full Script with Notes</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <main class="content">
+            <h1 class="section-title">Scene Economy Analysis</h1>
+            
+            <div class="content-text">
+                Comprehensive scene-by-scene analysis examining narrative efficiency, purpose clarity, and structural contribution. Every scene must serve multiple functions: advancing plot, revealing character, building theme, or escalating tension.
+            </div>
+
+            <div class="section-subtitle">Overall Scene Efficiency Assessment</div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Scene Efficiency</div>
+                    <div class="stat-value good" style="font-size: 24px; margin-top: 12px;">7.5 / 10</div>
+                    <div class="content-text" style="font-size: 13px; margin-top: 8px; text-align: center; color: var(--text-secondary);">
+                        Mostly tight, some bloat
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Escalation Logic</div>
+                    <div class="stat-value excellent" style="font-size: 24px; margin-top: 12px;">8.5 / 10</div>
+                    <div class="content-text" style="font-size: 13px; margin-top: 8px; text-align: center; color: var(--text-secondary);">
+                        Strong progression
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Redundancy Control</div>
+                    <div class="stat-value moderate" style="font-size: 24px; margin-top: 12px;">6.5 / 10</div>
+                    <div class="content-text" style="font-size: 13px; margin-top: 8px; text-align: center; color: var(--text-secondary);">
+                        Several repetitive beats
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Overall Economy Score</div>
+                    <div class="stat-value good" style="font-size: 48px; margin-top: 12px;">7.9 / 10</div>
+                    <div class="content-text" style="font-size: 13px; margin-top: 8px; text-align: center; color: var(--text-secondary);">
+                        Efficient with targeted improvements needed
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-subtitle">Scene Economy Principles</div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Essential Scene Functions</div>
+                    <ul class="bullet-list strengths" style="margin-top: 12px; font-size: 14px;">
+                        <li><strong>Plot Advancement:</strong> Move story forward</li>
+                        <li><strong>Character Revelation:</strong> Deepen understanding</li>
+                        <li><strong>Theme Building:</strong> Reinforce core ideas</li>
+                        <li><strong>Tension Escalation:</strong> Raise stakes/conflict</li>
+                        <li><strong>Emotional Resonance:</strong> Connect with audience</li>
+                    </ul>
+                    <div class="highlight-box" style="margin-top: 12px;">
+                        <div class="content-text" style="font-size: 13px; margin-bottom: 0;">
+                            <strong>Rule:</strong> Every scene should serve at least 2-3 functions. Single-purpose scenes are candidates for cutting or merging.
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Scene Economy Red Flags</div>
+                    <ul class="bullet-list concerns" style="margin-top: 12px; font-size: 14px;">
+                        <li><strong>Repetition:</strong> Same information conveyed multiple times</li>
+                        <li><strong>Treading water:</strong> No forward momentum</li>
+                        <li><strong>Unnecessary exposition:</strong> Info dumps without drama</li>
+                        <li><strong>Tonal breaks:</strong> Scenes that undermine atmosphere</li>
+                        <li><strong>Geographic confusion:</strong> Unclear spatial relationships</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-subtitle">Act I: Setup & Entrapment (Scenes 1-17)</div>
+
+            <div class="subsection-title">Act I Scene Efficiency</div>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Scene</th>
+                        <th>Purpose</th>
+                        <th>Functions Served</th>
+                        <th>Efficiency</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>1-2: Jungle Ambush</strong></td>
+                        <td>Establish Ranjit as threat</td>
+                        <td>Plot, Character, Tone</td>
+                        <td><span class="stat-value excellent" style="font-size: 14px;">High</span></td>
+                        <td>Strong opening, immediate tension</td>
+                    </tr>
+                    <tr>
+                        <td><strong>3: Drive to Station</strong></td>
+                        <td>Geographic setup</td>
+                        <td>Plot, World-building</td>
+                        <td><span class="stat-value good" style="font-size: 14px;">Good</span></td>
+                        <td>Functional transition</td>
+                    </tr>
+                    <tr>
+                        <td><strong>4-7: Bar Fight</strong></td>
+                        <td>Vikram introduction, arrest setup</td>
+                        <td>Character, Plot</td>
+                        <td><span class="stat-value moderate" style="font-size: 14px;">Moderate</span></td>
+                        <td>⚠️ Could trim 20-30%, remove comedy</td>
+                    </tr>
+                    <tr>
+                        <td><strong>8-10: Police Station Setup</strong></td>
+                        <td>Location establishment, characters</td>
+                        <td>World-building, Character</td>
+                        <td><span class="stat-value good" style="font-size: 14px;">Good</span></td>
+                        <td>Needs earlier geography clarification</td>
+                    </tr>
+                    <tr>
+                        <td><strong>11-14: Vikram Processing</strong></td>
+                        <td>Protagonist vulnerability, routine</td>
+                        <td>Character, Plot</td>
+                        <td><span class="stat-value moderate" style="font-size: 14px;">Moderate</span></td>
+                        <td>⚠️ Add emotional stakes here (photo/memory)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>15-17: Pre-Ranjit Atmosphere</strong></td>
+                        <td>Calm before storm</td>
+                        <td>Tone, Tension Setup</td>
+                        <td><span class="stat-value good" style="font-size: 14px;">Good</span></td>
+                        <td>Effective building dread</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box warning">
+                <div class="content-text" style="margin-bottom: 0;">
+                    <strong>Act I Efficiency Issue:</strong> Emotional stakes arrive too late. Audience needs to care about Vikram's family by Scene 10-12, not Scene 40.
+                </div>
+            </div>
+
+            <div class="section-subtitle">Act II-A: Psychological Warfare (Scenes 18-45)</div>
+
+            <div class="subsection-title">Act II-A Scene Efficiency</div>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Scene</th>
+                        <th>Purpose</th>
+                        <th>Functions Served</th>
+                        <th>Efficiency</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>18-20: Ranjit Entrance</strong></td>
+                        <td>Antagonist arrival, tone shift</td>
+                        <td>Character, Plot, Tone, Tension</td>
+                        <td><span class="stat-value excellent" style="font-size: 14px;">Excellent</span></td>
+                        <td>✓ Iconic introduction, multiple functions</td>
+                    </tr>
+                    <tr>
+                        <td><strong>21-25: Knife Demonstration</strong></td>
+                        <td>Establish dominance, menace</td>
+                        <td>Character, Tension, Theme</td>
+                        <td><span class="stat-value excellent" style="font-size: 14px;">Excellent</span></td>
+                        <td>✓ Memorable, efficient threat display</td>
+                    </tr>
+                    <tr>
+                        <td><strong>26-30: First Humiliation Cycle</strong></td>
+                        <td>Psychological breakdown begins</td>
+                        <td>Character, Tension</td>
+                        <td><span class="stat-value good" style="font-size: 14px;">Good</span></td>
+                        <td>Effective but begins repetition pattern</td>
+                    </tr>
+                    <tr>
+                        <td><strong>31-35: Avinash Murder</strong></td>
+                        <td>Stakes raised, no escape</td>
+                        <td>Plot, Tension, Character</td>
+                        <td><span class="stat-value excellent" style="font-size: 14px;">Excellent</span></td>
+                        <td>✓ Major turning point, efficient</td>
+                    </tr>
+                    <tr>
+                        <td><strong>36-40: Second Humiliation Cycle</strong></td>
+                        <td>Continue psychological torture</td>
+                        <td>Character, Tension</td>
+                        <td><span class="stat-value moderate" style="font-size: 14px;">Moderate</span></td>
+                        <td>⚠️ Repetitive, needs variation or compression</td>
+                    </tr>
+                    <tr>
+                        <td><strong>41-45: Third Humiliation Cycle</strong></td>
+                        <td>Further breakdown</td>
+                        <td>Character</td>
+                        <td><span class="stat-value" style="font-size: 14px; color: #f59e0b;">Low</span></td>
+                        <td>⚠️ Redundant with 36-40, merge or cut</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box warning">
+                <div class="content-text" style="margin-bottom: 0;">
+                    <strong>Act II-A Efficiency Issue:</strong> Scenes 36-45 contain repetitive humiliation beats. Each cycle must escalate or introduce new tactics—otherwise merge/compress.
+                </div>
+            </div>
+
+            <div class="section-subtitle">Act II-B: Emotional Peak & Identity Revelation (Scenes 46-70)</div>
+
+            <div class="subsection-title">Act II-B Scene Efficiency</div>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Scene</th>
+                        <th>Purpose</th>
+                        <th>Functions Served</th>
+                        <th>Efficiency</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>46-50: Isha Arrival</strong></td>
+                        <td>Emotional stakes explode</td>
+                        <td>Plot, Character, Emotion, Tension</td>
+                        <td><span class="stat-value excellent" style="font-size: 14px;">Excellent</span></td>
+                        <td>✓ Game-changer, serves 4+ functions</td>
+                    </tr>
+                    <tr>
+                        <td><strong>51-55: Isha-Vikram Confrontation</strong></td>
+                        <td>Relationship history, emotional depth</td>
+                        <td>Character, Emotion, Theme</td>
+                        <td><span class="stat-value excellent" style="font-size: 14px;">Excellent</span></td>
+                        <td>✓ Powerful, necessary exposition</td>
+                    </tr>
+                    <tr>
+                        <td><strong>56-60: Kashi Arrival</strong></td>
+                        <td>Brother relationship, Ranjit vulnerability</td>
+                        <td>Character, Plot, Tension</td>
+                        <td><span class="stat-value good" style="font-size: 14px;">Good</span></td>
+                        <td>Strong but feels abrupt—needs earlier setup</td>
+                    </tr>
+                    <tr>
+                        <td><strong>61-65: Identity Switch Reveal</strong></td>
+                        <td>Major plot twist, existential dread</td>
+                        <td>Plot, Tension, Theme</td>
+                        <td><span class="stat-value excellent" style="font-size: 14px;">Excellent</span></td>
+                        <td>✓ Central concept payoff, efficient</td>
+                    </tr>
+                    <tr>
+                        <td><strong>66-70: Kashi Death</strong></td>
+                        <td>Ranjit's loss of control, emotional fracture</td>
+                        <td>Character, Plot, Emotion, Tension</td>
+                        <td><span class="stat-value excellent" style="font-size: 14px;">Excellent</span></td>
+                        <td>✓ Major turning point, humanizes villain</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box success">
+                <div class="content-text" style="margin-bottom: 0;">
+                    <strong>Act II-B Efficiency:</strong> Excellent scene economy. Nearly every scene serves 3-4 functions simultaneously. This is thriller storytelling at peak efficiency.
+                </div>
+            </div>
+
+            <div class="section-subtitle">Act III: Fire Climax & Resolution (Scenes 71-90)</div>
+
+            <div class="subsection-title">Act III Scene Efficiency</div>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Scene</th>
+                        <th>Purpose</th>
+                        <th>Functions Served</th>
+                        <th>Efficiency</th>
+                        <th>Notes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>71-75: Akhil Arrival</strong></td>
+                        <td>Ultimate stakes, father-son dynamic</td>
+                        <td>Emotion, Plot, Tension</td>
+                        <td><span class="stat-value excellent" style="font-size: 14px;">Excellent</span></td>
+                        <td>✓ Emotional peak, maximum tension</td>
+                    </tr>
+                    <tr>
+                        <td><strong>76-80: Desperate Planning</strong></td>
+                        <td>Vikram strategizes, alliance with Isha</td>
+                        <td>Character, Plot, Tension</td>
+                        <td><span class="stat-value good" style="font-size: 14px;">Good</span></td>
+                        <td>Necessary buildup to climax</td>
+                    </tr>
+                    <tr>
+                        <td><strong>81-85: Fire Sequence Setup</strong></td>
+                        <td>Environmental escalation, final plan</td>
+                        <td>Plot, Tension, Visual</td>
+                        <td><span class="stat-value good" style="font-size: 14px;">Good</span></td>
+                        <td>Needs clearer geography descriptions</td>
+                    </tr>
+                    <tr>
+                        <td><strong>86-88: Fire Climax</strong></td>
+                        <td>Physical confrontation, survival</td>
+                        <td>Action, Visual, Emotion, Tension</td>
+                        <td><span class="stat-value excellent" style="font-size: 14px;">Excellent</span></td>
+                        <td>✓ Visceral payoff, symbolic resonance</td>
+                    </tr>
+                    <tr>
+                        <td><strong>89-90: Resolution</strong></td>
+                        <td>Father-son reconnection, closure</td>
+                        <td>Emotion, Character, Theme</td>
+                        <td><span class="stat-value excellent" style="font-size: 14px;">Excellent</span></td>
+                        <td>✓ Cathartic, efficient ending</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="section-subtitle">Redundancy Analysis</div>
+
+            <div class="subsection-title">Repetitive Patterns Identified</div>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Repetitive Element</th>
+                        <th>Locations</th>
+                        <th>Impact</th>
+                        <th>Solution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Humiliation Cycles</strong></td>
+                        <td>Scenes 26-30, 36-40, 41-45</td>
+                        <td>Pacing drag, diminishing returns</td>
+                        <td>Compress to 2 cycles, vary tactics</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Ranjit's Philosophy Speeches</strong></td>
+                        <td>Scattered through 20-70</td>
+                        <td>Slows thriller momentum</td>
+                        <td>Trim by 20-40%, show don't tell</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Escape Attempt Failures</strong></td>
+                        <td>Multiple throughout Act II</td>
+                        <td>Predictable pattern</td>
+                        <td>Vary approach each time</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Roopa's Naivety Moments</strong></td>
+                        <td>Scattered Act I-II</td>
+                        <td>Tonal inconsistency</td>
+                        <td>Remove comedy, play as intuitive</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="section-subtitle">Scene Cutting Recommendations</div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Scenes That Could Be Cut</div>
+                    <ul class="bullet-list concerns" style="margin-top: 12px; font-size: 14px;">
+                        <li><strong>None entirely</strong> — Script is generally lean</li>
+                        <li>No full scenes are expendable</li>
+                        <li>Issue is internal scene bloat, not unnecessary scenes</li>
+                    </ul>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Scenes That Could Be Compressed</div>
+                    <ul class="bullet-list" style="margin-top: 12px; font-size: 14px;">
+                        <li><strong>Bar Fight (4-7):</strong> Trim by 20-30%</li>
+                        <li><strong>Humiliation Cycles (36-45):</strong> Compress to 1-2 scenes</li>
+                        <li><strong>Monologue Scenes:</strong> Trim speeches throughout</li>
+                        <li><strong>Processing Scenes (11-14):</strong> Tighten pacing</li>
+                    </ul>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Scenes That Need Expansion</div>
+                    <ul class="bullet-list strengths" style="margin-top: 12px; font-size: 14px;">
+                        <li><strong>Early Emotional Stakes:</strong> Add 1-2 scenes showing family</li>
+                        <li><strong>Geography Walkthrough:</strong> Add brief establishing scene</li>
+                        <li><strong>Kashi Foreshadowing:</strong> Plant hints earlier</li>
+                        <li><strong>Identity Twist Setup:</strong> Add micro-moments</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-subtitle">Escalation Analysis</div>
+
+            <div class="subsection-title">Tension Escalation Curve</div>
+
+            <table class="data-table">
+                <thead>
+                    <tr>
+                        <th>Act Section</th>
+                        <th>Tension Level</th>
+                        <th>Key Escalation Points</th>
+                        <th>Effectiveness</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Act I (1-17)</strong></td>
+                        <td>Low → Moderate</td>
+                        <td>Bar fight, arrest, Ranjit arrival</td>
+                        <td><span class="stat-value moderate" style="font-size: 14px;">Slow burn</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Act II-A (18-45)</strong></td>
+                        <td>High</td>
+                        <td>Knife demo, Avinash murder, psychological torture</td>
+                        <td><span class="stat-value good" style="font-size: 14px;">Strong</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Act II-B (46-70)</strong></td>
+                        <td>Very High</td>
+                        <td>Isha arrival, identity reveal, Kashi death</td>
+                        <td><span class="stat-value excellent" style="font-size: 14px;">Excellent</span></td>
+                    </tr>
+                    <tr>
+                        <td><strong>Act III (71-90)</strong></td>
+                        <td>Extreme</td>
+                        <td>Akhil in danger, fire climax, final confrontation</td>
+                        <td><span class="stat-value excellent" style="font-size: 14px;">Excellent</span></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="highlight-box">
+                <div class="content-text" style="margin-bottom: 0;">
+                    <strong>Escalation Pattern:</strong> Excellent from Scene 18 onwards. Issue is Act I's gradual buildup—needs earlier emotional engagement to hook audience faster.
+                </div>
+            </div>
+
+            <div class="section-subtitle">Clarity & Geographic Issues</div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Spatial Clarity Problems</div>
+                    <ul class="bullet-list concerns" style="margin-top: 12px; font-size: 14px;">
+                        <li><strong>Police station layout:</strong> Relationship between rooms unclear</li>
+                        <li><strong>Fire sequence geography:</strong> Hard to follow character movements</li>
+                        <li><strong>Skylight location:</strong> Vague spatial relationship to other areas</li>
+                        <li><strong>Exit paths:</strong> Unclear where characters can/can't go</li>
+                    </ul>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Solutions</div>
+                    <ul class="bullet-list strengths" style="margin-top: 12px; font-size: 14px;">
+                        <li>Add early "walk and talk" establishing geography</li>
+                        <li>Include simple floor plan note in script</li>
+                        <li>Clarify action descriptions in fire climax</li>
+                        <li>Consistent spatial references throughout</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-subtitle">Scene Economy Targets</div>
+
+            <div class="subsection-title">Priority Improvements by Act</div>
+
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-label">Act I Improvements</div>
+                    <ul class="bullet-list" style="margin-top: 12px; font-size: 14px;">
+                        <li><strong>Trim:</strong> Bar fight (20-30% reduction)</li>
+                        <li><strong>Add:</strong> Emotional stakes (1-2 beats)</li>
+                        <li><strong>Tighten:</strong> Processing scenes (11-14)</li>
+                        <li><strong>Target pages:</strong> Compress Act I by 3-5 pages</li>
+                    </ul>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Act II-A Improvements</div>
+                    <ul class="bullet-list" style="margin-top: 12px; font-size: 14px;">
+                        <li><strong>Compress:</strong> Humiliation cycles (merge 2-3 scenes)</li>
+                        <li><strong>Trim:</strong> Monologues (20-40% across section)</li>
+                        <li><strong>Vary:</strong> Each psychological tactic distinct</li>
+                        <li><strong>Target pages:</strong> Compress by 5-8 pages</li>
+                    </ul>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-label">Act II-B & III Improvements</div>
+                    <ul class="bullet-list strengths" style="margin-top: 12px; font-size: 14px;">
+                        <li><strong>Minimal changes needed</strong> — Already efficient</li>
+                        <li><strong>Clarify:</strong> Fire sequence geography</li>
+                        <li><strong>Polish:</strong> Emotional beats in resolution</li>
+                        <li><strong>Target:</strong> Maintain current page count</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="section-subtitle">Final Scene Economy Verdict</div>
+
+            <div class="content-text">
+                <strong>Is Monster D efficiently structured?</strong><br>
+                Yes — mostly. Act II-B and Act III demonstrate excellent scene economy with nearly every scene serving 3-4 functions.
+            </div>
+
+            <div class="content-text">
+                <strong>Where does it falter?</strong><br>
+                Act I and Act II-A contain some redundancy and pacing issues. Scenes aren't "bad"—they just need compression and variation.
+            </div>
+
+            <div class="content-text">
+                <strong>What's the target page reduction?</strong><br>
+                8-13 pages total across the script. This tightens pacing without losing essential content.
+            </div>
+
+            <div class="highlight-box success">
+                <div class="content-text" style="margin-bottom: 0;">
+                    <strong>Overall Scene Economy: 7.9/10</strong> — Strong foundation with targeted improvements yielding major pacing gains.
+                </div>
+            </div>
+
+        </main>
+    </div>
+</body>
+</html>
